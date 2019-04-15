@@ -8,8 +8,8 @@ int main(int argc, char *argv[]){
   char byte;
   ssize_t res;
 
-  while ((res = read (0, &byte, 1)) > 0)
-    write (1, &byte, res);
+  while ((res = read (STDIN_FILENO, &byte, 1)) > 0)
+    write (STDOUT_FILENO, &byte, res);
 
   return 0;
 }

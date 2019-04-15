@@ -13,6 +13,6 @@ int main(int argc, char* argv[]){
   else
     fd = open(argv[1], O_RDONLY);
   size = readln(fd, buf, 100);
-  write(1, buf, size);
+  write(STDOUT_FILENO, buf, size);
   return 0;
 }
