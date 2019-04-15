@@ -9,7 +9,7 @@
 int main(int argc, char* args[]){
   int fd;
   char chr = 'a';
-  fd = open("10mb.cat", O_CREAT | O_TRUNC | O_WRONLY, 0777);
+  fd = open("10mb.bat", O_CREAT | O_TRUNC | O_WRONLY, 0777);
   for (int i=0; i< SIZE_TO_WRITE; i++)
     write(fd,&chr,1);
   close(fd);
@@ -28,7 +28,7 @@ int main(int argc, char* args[]){
   char buffer[BUFFER_SIZE];
 
   populateBuffer(buffer,BUFFER_SIZE);
-  fd = open("10mb.cat", O_CREAT | O_TRUNC | O_WRONLY, 0777);
+  fd = open("10mb.bat", O_CREAT | O_TRUNC | O_WRONLY, 0777);
   for (int i=0; i< SIZE_TO_WRITE / BUFFER_SIZE; i++)
     write(fd,&buffer,BUFFER_SIZE);
   close(fd);
