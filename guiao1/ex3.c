@@ -15,7 +15,7 @@ int main(int argc, char *argv[]){
   char byte[size];
   ssize_t res;
 
-  while ((res = read (STDIN_FILENO, byte, 100)) > 0)
+  while ((res = read (STDIN_FILENO, byte, size)) > 0)
     write (STDOUT_FILENO, byte, res);
 
   return 0;
