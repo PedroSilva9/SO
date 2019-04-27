@@ -6,6 +6,8 @@ EX2=ex2.c
 EXEC2=2.out
 EX3=ex3.c
 EXEC3=3.out
+EX4=ex4.c
+EXEC4=4.out
 EX5=ex5.c
 EXEC5=5.out
 
@@ -17,6 +19,9 @@ EXEC5=5.out
 
 3: $(EX3)
 	$(CC) $(CFLAGS) -o $(EXEC3) $(EX3)
+
+4: $(EX4)
+	$(CC) $(CFLAGS) -o $(EXEC4) $(EX4)
 
 5: $(EX5)
 	$(CC) $(CFLAGS) -o $(EXEC5) $(EX5)
