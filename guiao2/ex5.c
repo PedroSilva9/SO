@@ -14,5 +14,5 @@ int main(int argc, char** argv){
       _exit(0);
     }
   }
-  return 1;
+  return 0;
 }
