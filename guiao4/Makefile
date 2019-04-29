@@ -27,4 +27,4 @@ EXEC5=5.out
 	$(CC) $(CFLAGS) -o $(EXEC5) $(EX5)
 
 clean:
-	rm -rf *.out
+	rm -rf *.out *.txt
